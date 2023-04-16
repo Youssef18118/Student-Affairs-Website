@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8">
+        <title>Edit Student</title>
+    
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+
+    </header>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-light position-relative shadow">
+      <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
+          <a href="" class="navbar-brand font-weight-bold text-secondary" style="font-size: 50px;">
+              <i class="flaticon-043-teddy-bear"></i>
+              <span class="text-primary">Student Affairs</span>
+          </a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+              <div class="navbar-nav font-weight-bold mx-auto py-0">
+                  <a href="index.html" class="nav-item nav-link active">Home</a>
+                  <a href="add_student.html" class="nav-item nav-link">Add Student</a>
+                  <a href="#" class="nav-item nav-link">Remove Student</a>
+                  <a href="EditStudentsPage.html" class="nav-item nav-link">Edit Student</a>
+                  <!-- <a href="gallery.html" class="nav-item nav-link">Account</a> -->
+                  <div class="nav-item dropdown">
+                      <a  class="nav-link dropdown-toggle" data-toggle="dropdown">Options</a>
+                      <div class="dropdown-menu rounded-0 m-0">
+                          <a href="view_Students.html" class="dropdown-item">View Students</a>
+                          <a href="Department.html" class="dropdown-item">Assign Department</a>
+                          <a href="search.html" class="dropdown-item">Search Student</a>
+                      </div>
+                  </div>
+                  <a href="contact.html" class="nav-item nav-link">Contact</a>
+              </div>
+              <a href="login.html" class="btn btn-primary px-4">Register</a>
+          </div>
+      </nav>
+  </div>
+  <!-- Navbar End -->
+
+    <br><br>
+    <center>
+        <h2>Edit student</h2>
+    </center>
+    <br />
+
+    <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form action="index.html" method="post">
+              <div class="form-group">
+                <label for="Stname">Name</label>
+                <input id="Stname" name="name" type="text" class="form-control" value="Will be retrieved from DB" />
+              </div>
+              <div class="form-group">
+                <label for="identifier">ID</label>
+                <input id="identifier" name="id" type="text" class="form-control" value="Will be retrieved from DB" maxlength="8" />
+              </div>
+              <div class="form-group">
+                <label for="lvl">Level</label>
+                <input id="lvl" name="level" type="number" class="form-control" min="1" max="4" value="2" />
+              </div>
+              <div class="form-group">
+                <label for="acOrIn">Status</label>
+                <select id="acOrIn" class="form-control">
+                  <option value="1">Active</option>
+                  <option value="2">Inactive</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="DOB">Date of birth</label>
+                <input id="DOB" name="date" type="date" class="form-control" value="2003-09-17" />
+              </div>
+              <div class="form-group">
+                <label for="Department">Department</label>
+                <select id="Department" class="form-control" disabled>
+                  <option value="1">CS</option>
+                  <option value="2" selected>IS</option>
+                  <option value="3">IT</option>
+                  <option value="4">AI</option>
+                  <option value="5">DS</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="grade">GPA</label>
+                <input id="grade" name="gpa" type="number" class="form-control" min="0" max="4.0" value="3.5" step="0.01"/>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" name="mail" type="email" class="form-control" value="TestMail@gmail.com" />
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" class="form-control">
+                  <option value="1">Male</option>
+                  <option value="2">Female</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="number">Phone Number</label>
+                <input id="number" name="PhNumber" type="text" class="form-control" value="Will be retrieved from DB"/>
+              </div>
+              <button type="submit" class="btn btn-primary">Save Changes</button>
+              <button type="button" class="btn btn-danger">Delete Student</button>
+            </form>
+          </div>
+        </div>
+      </div>
+        </center>
+    </div>
+
+
+       
+
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+</body>
+</html>

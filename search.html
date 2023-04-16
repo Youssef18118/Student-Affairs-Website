@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <meta charset="utf-8">
+  <title>Student Affairs</title>
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar Start -->
+  <div class="container-fluid bg-light position-relative shadow">
+      <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
+          <a href="" class="navbar-brand font-weight-bold text-secondary" style="font-size: 50px;">
+              <i class="flaticon-043-teddy-bear"></i>
+              <span class="text-primary">Student Affairs</span>
+          </a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+              <div class="navbar-nav font-weight-bold mx-auto py-0">
+                  <a href="index.html" class="nav-item nav-link active">Home</a>
+                  <a href="add_student.html" class="nav-item nav-link">Add Student</a>
+                  <a href="#" class="nav-item nav-link">Remove Student</a>
+                  <a href="EditStudentsPage.html" class="nav-item nav-link">Edit Student</a>
+                  <!-- <a href="gallery.html" class="nav-item nav-link">Account</a> -->
+                  <div class="nav-item dropdown">
+                      <a  class="nav-link dropdown-toggle" data-toggle="dropdown">Options</a>
+                      <div class="dropdown-menu rounded-0 m-0">
+                          <a href="view_Students.html" class="dropdown-item">View Students</a>
+                          <a href="Department.html" class="dropdown-item">Assign Department</a>
+                          <a href="search.html" class="dropdown-item">Search Student</a>
+                      </div>
+                  </div>
+                  <a href="contact.html" class="nav-item nav-link">Contact</a>
+              </div>
+              <a href="login.html" class="btn btn-primary px-4">Register</a>
+          </div>
+      </nav>
+  </div>
+  <!-- Navbar End -->
+
+
+    <br><br>
+
+    <div class="search-box">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Enter student name">
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="button" id="searchbutton" onclick="searchStudents()">Search</button>
+        </div>
+      </div>
+    </div>
+    
+    <table class="table" id="results-table"></table>
+    
+
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>  
+    <script src="viewstudents.js"></script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Add new student</title>
+
+    </head>
+
+    <body>
+        <header>
+            <meta charset="utf-8">
+            <title>Add Student</title>
+        
+            <!-- Customized Bootstrap Stylesheet -->
+            <link href="css/style.css" rel="stylesheet">
+
+
+        </header>
+        
+        <!-- Navbar Start -->
+          <div class="container-fluid bg-light position-relative shadow">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
+                <a href="" class="navbar-brand font-weight-bold text-secondary" style="font-size: 50px;">
+                    <i class="flaticon-043-teddy-bear"></i>
+                    <span class="text-primary">Student Affairs</span>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav font-weight-bold mx-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="add_student.html" class="nav-item nav-link">Add Student</a>
+                        <a href="#" class="nav-item nav-link">Remove Student</a>
+                        <a href="EditStudentsPage.html" class="nav-item nav-link">Edit Student</a>
+                        <!-- <a href="gallery.html" class="nav-item nav-link">Account</a> -->
+                        <div class="nav-item dropdown">
+                            <a  class="nav-link dropdown-toggle" data-toggle="dropdown">Options</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="view_Students.html" class="dropdown-item">View Students</a>
+                                <a href="Department.html" class="dropdown-item">Assign Department</a>
+                                <a href="search.html" class="dropdown-item">Search Student</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="login.html" class="btn btn-primary px-4">Register</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar End -->
+
+        <br><br>
+        <h1><center>Add New Student</center></h1>
+        <br>
+        <form>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 offset-md-3">
+                  <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter Student's name">
+                  </div>
+                  <div class="form-group">
+                    <label for="id">ID:</label>
+                    <input type="text" class="form-control" id="id" placeholder="Enter Student's ID">
+                  </div>
+                  <div class="form-group">
+                    <label for="level">Level:</label>
+                    <input type="number" class="form-control" id="level" name="level" min="1" max="4">
+                  </div>
+                  <div class="form-group">
+                    <label for="status">Status:</label>
+                    <select class="form-control" id="status" name="status">
+                      <option value="Active">Active</option>
+                      <option value="Inactive">Inactive</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="dob">Date of birth:</label>
+                    <input type="date" class="form-control" id="dob">
+                  </div>
+                  <div class="form-group">
+                    <label for="department">Department:</label>
+                    <select class="form-control" id="department" name="department">
+                      <option value="CS">Computer Science</option>
+                      <option value="IS">Information System</option>
+                      <option value="AI">Artificial Intelligence</option>
+                      <option value="DS">Decision Support</option>
+                      <option value="IT">Information Technology</option>
+                      <option value="none" selected>None</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="gpa">GPA:</label>
+                    <input type="text" class="form-control" id="gpa" placeholder="Enter Student's GPA">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter Student's email">
+                  </div>
+                  <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select class="form-control" id="gender" name="gender">
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Phone number:</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" pattern="(01)[0,1,2,5][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </div>
+          </form>
+
+        
+
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
